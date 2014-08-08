@@ -5,6 +5,10 @@ language: go
 go:
     - 1.3
 
+install:
+    - go get github.com/onsi/ginkgo/ginkgo
+    - go get github.com/onsi/gomega
+
 # Testing script to exec
 script:
     - go test -v ./...
